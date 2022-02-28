@@ -1,3 +1,5 @@
+> 该插件是针对[该页面](https://www.fashionnova.com/collections/new?view=one-image&product_type=Shoes)进行开发的, 测试时请访问该页面
+
 ## 实时的获取页面信息逻辑
 
 根据popup、content的生命周期:
@@ -14,5 +16,5 @@
 
 
 ## `popup`页面的样式修改思路
-可以通过content_script插入自己的dom到页面中, 从而替换原生的popup页面, 这样页面的样式就可以做到定制.
-具体插入的时机, 可以通过popup发送消息, 模拟页面的插入时机
+可以通过content_script插入自己的dom到页面中, 将popup的页面隐藏, 从而替换原生的popup页面, 这样页面的样式就可以做到定制.
+具体插入的时机, 可以通过popup发送消息, 模拟页面的显示与popup点击出现的时机
