@@ -1,0 +1,27 @@
+{
+  "name": "onsite-plugin-demo",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "onsite plugin",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.fashionnova.com/collections/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
